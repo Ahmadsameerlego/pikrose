@@ -1,0 +1,119 @@
+body{
+    direction: ltr;
+    text-align: left;
+}
+
+.sliderContent {
+    left: 16%;
+    right: auto;
+}
+.readMore {
+    justify-content: start !important;
+}
+#app .appImagePhone img {
+    right: 26%;
+    left: auto;
+}
+footer .footer_head::before {
+    left: 0;
+    right: auto;
+}
+.userInteraction .search {
+    margin-right: 70px;
+    margin-left: auto;
+}
+.accordion-button::after {
+    margin-left: auto;
+    margin-right: 0;
+    transform: rotate(-90deg);
+}
+#personalInfoForm .form-group svg {
+    left: 3%;
+    right: auto;
+}
+.intl-tel-input.allow-dropdown .flag-container {
+    left: auto;
+    right: 0;
+}
+
+#personalInfoForm .form-group .fa-chevron-down, #personalInfoForm .form-group .fa-eye, .togglePass, #personalInfoForm .form-group .fa-eye-slash {
+    right: 3%;
+    left: auto;
+}
+.accHeaderIcon {
+    margin-right: 12px;
+    margin-left: auto;
+}
+.single_complain .complainImage img {
+    margin-right: 20px;
+    margin-left: auto;
+}
+.single_complain  svg{
+    transform: rotate(180deg);
+}
+.ContactForm label {
+    left: 5px;
+    right: auto;
+}
+.form-group2 {
+    margin-left: 19%;
+    margin-right: auto;
+}
+.cart_item .cartImage img {
+    margin-right: 20px;
+    margin-left: auto;
+}
+.messages .fa-message, .fa-tag, .rightHand .fa-calendar-days {
+    margin-right: 9px;
+}
+.discountForm .button1 {
+    border-top-right-radius: 10px ;
+    border-bottom-right-radius: 10px ;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+.discountForm input {
+    border-top-left-radius: 10px ;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+#categoryDetails .swiper-button-next svg, #categoryDetails .swiper-button-prev svg{
+    transform: rotate(180deg);
+}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{display: none;}
+#confirmOrder .leftHand {
+    border-left: 1px solid #ccc;
+    padding-left: 30px;
+    border-right: none;
+    padding-right: 0px;
+}
+.selectUserInfo .fa-chevron-down {
+    right: 2%;
+    left: auto;
+}
+.ContactForm #address {
+    padding-right: 80px;
+    padding-left: 0;
+}
+.location_icon {
+    right: 0;
+    left: auto;
+}
+.modal-header .btn-close {
+    margin: -0.5rem auto -0.5rem -0.5rem;
+}
+.occasions_cards .single_occasion .remove_occasion {
+    right: 30px;
+    left: auto;
+}
+
+.info_cards .info_card .quants {
+    right: 0;
+    left: auto;
+}
+.clientDetails .phoneIcon {
+    margin-right: 12px;
+    margin-left: auto;
+}
+.mapForm .form-group input{ padding-left: 0px;padding-right: 60px; }

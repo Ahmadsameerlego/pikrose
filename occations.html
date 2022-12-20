@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> الصفحة الرئيسية </title>
+
+        <!-- fontawesome v.6 style cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- bootstrap v.5 style cdn -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        
+        <!-- animate css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+    
+        <!-- flat picker  -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+        <!-- main styles -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- english style  -->
+        <!-- <link rel="stylesheet" href="css/style-ltr.css"> -->
+        <!-- responsive style file -->
+        <link rel="stylesheet" href="css/responsive.css">
+    
+<body>
+    <main>
+        <!-- start header -->
+        <header>
+            <!-- header top section -->
+            <section id="top_section " class="mt-4 mb-4">
+                <div class="container">
+                    <div class="flex_between">
+
+                        <div class=" flex_center">
+
+                                <!-- suadia -->
+                                <button class="btn flex_center suadia_flag">
+                                    <img src="imgs/saudi-arabia (4).png" alt="saudia flag">
+                                    <span>السعودية</span>
+                                </button>
+
+
+                                <!-- account insert this if the account logins -->
+                                <a href="account.html" class="personal_account flex_center">
+                                    <img src="imgs/personal.PNG" alt="personal image">
+                                    <span>احمد سمير</span>
+                                </a>
+
+                                <!-- account insert this if the account does not login -->
+                                <!-- <a href="#" class="personal_account flex_center">
+                                  <img src="imgs/Path 290.png" alt="personal image">
+                                  <span>تسجيل الدخول</span>
+                                </a> -->
+                                
+
+                        </div>
+
+                        <!-- USA -->
+                        <button class="btn flex_center suadia_flag">
+                            <img src="imgs/united-states-of-america (1).png" alt="USA flag">
+                            <span>english</span>
+                        </button>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- header bottom section -->
+            <section id="bottom_section">
+                <div class="container">
+                    <div class="flex_between">
+
+                      <!-- toggle navbar -->
+                      <div class="hamburger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                      </div>
+
+                        <!-- logo -->
+                        <div id="logo">
+                            <a href="index.html"><img src="imgs/Group 4.png" alt="Logo"></a>
+                        </div>
+
+                        <!-- navigation -->
+                        <nav class="navbar navbar-expand-lg navbar-light navSmallScreen">
+
+                            <div class="container-fluid">
+
+                              <div class="navbar-collapse" id="navbarSupportedContent">
+
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                                  <li class="nav-item">
+                                    <a class="nav-link " aria-current="page" href="index.html">الرئيسية</a>
+                                  </li>
+
+                                  <li class="nav-item">
+                                    <a class="nav-link " href="allCategories.html">جميع الاقسام</a>
+                                  </li>
+
+                                  <li class="nav-item">
+                                    <a class="nav-link active" href="occations.html">مناسباتي</a>
+                                  </li>
+
+                                  <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      طلباتي
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                      <li><a class="dropdown-item text-center fw-bold" href="currentOrders.html">طلبات حالية</a></li>
+                                      <li><a class="dropdown-item text-center fw-bold" href="currentOrders.html">طلبات منتهية</a></li>
+                                    </ul>
+                                  </li>
+
+                                  <li class="nav-item">
+                                    <a class="nav-link " href="favorites.html" >المفضلة</a>
+                                  </li>
+                                </ul>
+
+                              </div>
+                            </div>
+                        </nav>
+
+                        <!-- interaction( search / cart ) -->
+                        <div class="userInteraction flex_between">
+
+                            <button class="btn search main_color" type="button" data-bs-toggle="modal" data-bs-target="#searchModal"> 
+                                  <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  
+                                  <div class="modal-body">
+
+                                  <form action="">
+                                    <div class="mb-3">
+                                      <label for="search" class="form-label">ابحث عن ماتريد</label>
+                                      <input type="text" class="form-control" id="search" placeholder="عن ماذا تبحث ؟" autofocus>
+                                    </div>
+                                  </form>
+                                      
+
+                                  </div>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                            
+
+                                                        <a href="cart.html" class="cart main_color"> <i class="fa-solid fa-cart-shopping"></i> </a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </header>
+        <!-- end header -->
+
+        <section id="occaions" class="mt-5 mb-5">
+            <div class="container">
+                <!-- add occasion -->
+                <div class="d-flex justify-content-end">
+                    <button class="btn addOccasion button1" data-bs-toggle="modal" data-bs-target="#addOccasion" type="button"> اضافة مناسبة جديدة </button>
+                </div>
+
+                <!-- add occasion modal  -->
+                <div class="modal fade" id="addOccasion" tabindex="-1" aria-labelledby="addOccasionLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title mx-auto fw-bold" id="addOccasionLabel"> 
+                            <img src="imgs/Out line.png" alt="" class="addOccImg">
+                            اضافة مناسبة
+                            </h5>
+                          <button class="btn main_bg rounded-circle"> <i class="fa-solid fa-x white_color" data-bs-dismiss="modal" aria-label="Close"></i> </button>
+                        </div>
+                        <div class="modal-body">
+
+                          <form action="" class="addOccasionForm mx-auto">
+
+                            <div class="form">
+                                <input type="text" id="occasionName" name="" class="form__input" autocomplete="off" placeholder=" ">
+                                <label for="occasionName" class="form__label">اسم المناسبة</label>
+                            </div>
+
+                            <div class="selectBox position-relative">
+                                <input type="file" class="occasionImage form-control" id="occasionImage" name="" accept="image/*"  placeholder="صورة المناسبة">
+                                <i class="fa-solid fa-image"></i>
+                            </div>
+
+                            <div class="selectBox position-relative">
+
+                                <select class="form-select" aria-label="Default select example" id="occasionType">
+                                
+                                    <option selected hidden disabled>نوع المناسبة</option> <!-- do not loop on this option only for placeholder -->
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+    
+                                <i class="fa-solid fa-caret-down"></i>
+                            </div>
+
+                            <div class="selectBox position-relative">
+                                <input type="date" class="selector form-control" id="occasionDate" name="" placeholder="تاريخ المناسبة">
+                                <i class="fa-regular fa-calendar"></i>
+                            </div>
+
+                            <div class="mb-4">
+                                <button class="btn button1 mx-auto confirmForm" type="button" data-bs-dismiss="modal">تأكيد</button>  <!-- remove type button to submit -->
+                            </div>
+                            
+                          </form>
+                        </div>
+                        
+                      </div>
+                    </div>
+                </div>
+
+                <!-- occasions cards  -->
+                <section class="occasions_cards">
+
+                    <!-- single occasion  -->
+                    <div class="single_occasion d-flex mt-3">
+
+                        <!-- occasion image  -->
+                        <div class="occasion_img">
+                            <img src="imgs/637384473374103530.png" alt="occasion image">
+                        </div>
+
+                        <!-- occasion details  -->
+                        <div class="occasion_details mt-4 mb-4">
+
+                            <!-- title -->
+                            <h5 class="fw-bold"> عيد ميلاد صديق </h5>
+
+                            <!-- category -->
+                            <p class="main_color fw-6">عيد ميلاد</p>
+
+                            <!-- date -->
+                            <p class="gray_color"> 16/8/2022 </p>
+                        </div>
+
+                        <!-- remove occasion  -->
+                        <div class="remove_occasion" onclick="removeCard(this)">
+                            <button class="btn main_bg rounded-circle"> <i class="fa-solid fa-x white_color"></i> </button>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </section>
+
+        <!-- start footer  -->
+        <footer class="mt-5 mb-5">
+          <div class="main_container">
+            <div class="row">
+
+              <div class="col-md-3 mb-3">
+
+                <h6 class="footer_head"> تعرف علينا </h6>
+
+                <!-- main Links -->
+                <div class="mainLinks d-flex justify-content-start align-items-start flex-column">
+
+                  <a href="#" class="mb-2"> من نحن </a>
+                  <a href="#" class="mb-2"> الشروط والاحكام </a>
+                  <a href="#" class="mb-2"> اسئلة مكررة </a>
+                  <a href="#" class="mb-2"> اتصل بنا </a>
+
+                </div>
+
+              </div>
+
+              <div class="col-md-5 mb-3">
+                <h6 class="footer_head"> تواصل معنا </h6>
+
+                <!-- socail media -->
+                <div class="socialMedia d-flex">
+                  <a href="#"> <img src="imgs/facebook (7).png" alt="facebook"> </a>
+                  <a href="#"> <img src="imgs/twitter (6).png" alt="twitter"> </a>
+                  <a href="#"> <img src="imgs/instagram (6).png" alt="instagram"> </a>
+                  <a href="#"> <img src="imgs/linkedin.png" alt="linkedin"> </a>
+                  <a href="#"> <img src="imgs/youtube (3).png" alt="youtube"> </a>
+                </div>
+
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <h6 class="footer_head"> عمليات الدفع </h6>
+
+                <!-- payment methods -->
+                <div class="paymentMethods">
+                  
+                  <img src="imgs/Group 70450.png" alt="">
+                  <img src="imgs/Group 2183.png" alt="">
+                  <img src="imgs/Group 2182.png" alt="">
+                  <img src="imgs/Group 2181.png" alt="">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- end footer  -->
+
+        <!-- start copy right  -->
+        <section id="copyRight" class="pt-3">
+          <div class="main_container">
+            <div class="copyRightContent d-flex justify-content-between align-items-center">
+              <p class="fw-6"> جميع الحقوق محفوظة لدى pikrose 2022 </p>
+
+              <p class="fw-6"> تصميم <a href="https://aait.sa/"> أوامر الشبكة </a> </p>
+            </div>
+          </div>
+        </section>
+        <!-- end copy right  -->
+
+    </main>
+
+        <!-- fontawesome v.6 script cdn  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js" integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- bootstrap v.5 script cdn -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <!-- jquery v.3 cdn -->
+        <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+        <!-- flat picker  -->
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+        <!-- main scripts -->
+        <script src="js/main.js"></script>
+
+
+        <script>
+
+            // initialize flatpicker
+            $(".selector").flatpickr();
+ 
+
+            // add occasion card script
+            document.getElementById('occasionImage').addEventListener('change', (even)=>{
+                let fr = new FileReader();
+                let imaged ;
+
+                fr.onload = (event)=>{
+
+                  imaged = event.target.result;
+                  
+                  // add card function 
+                  document.querySelector('.confirmForm').addEventListener('click', ()=>{
+
+                    // add occasion card
+                    let occasionName = document.querySelector('#occasionName').value;
+                    let occasionType = document.querySelector('#occasionType').value;
+                    let occasionDate = document.querySelector('#occasionDate').value;
+
+
+                    let card = { occasionName  ,occasionType, occasionType };
+                              
+                      let cardTemplate = `
+                      <!-- single occasion  -->
+                          <div class="single_occasion d-flex mt-3">
+
+                              <!-- occasion image  -->
+                              <div class="occasion_img ">
+                                  <img src="${imaged}" class="occasion_img2" alt="occasion image">
+                              </div>
+
+                              <!-- occasion details  -->
+                              <div class="occasion_details mt-4 mb-4">
+
+                                  <!-- title -->
+                                  <h5 class="fw-bold"> `+occasionName+` </h5>
+
+                                  <!-- category -->
+                                  <p class="main_color fw-6"> `+occasionType+` </p>
+
+                                  <!-- date -->
+                                  <p class="gray_color"> `+occasionDate+` </p>
+                              </div>
+
+                              <!-- remove occasion  -->
+                              <div class="remove_occasion" onclick="removeCard(this)">
+                                  <button class="btn main_bg rounded-circle"> <i class="fa-solid fa-x white_color"></i> </button>
+                              </div>
+                          </div>
+                      `
+
+                      if( occasionName && occasionType && occasionType && imaged){
+                        let cloned =  document.querySelector(".occasions_cards").insertAdjacentHTML("beforebegin", cardTemplate);
+                        console.log(cloned)
+                      }
+
+                  })
+
+                }
+                fr.readAsDataURL(even.target.files[0]);
+
+                  
+            })
+
+            // remove card
+            function removeCard(event){
+              event.closest('.single_occasion').remove()
+            }
+        </script>
+
+
+
+        
+    
+</body>
+</html>

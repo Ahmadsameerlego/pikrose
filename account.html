@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> الصفحة الرئيسية </title>
+
+        <!-- fontawesome v.6 style cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- bootstrap v.5 style cdn -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        
+        <!-- animate css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+    
+        <!-- flat picker  -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+        <!-- input tel input plugin  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/8.4.6/css/intlTelInput.css">
+
+        <!-- main styles -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- english style  -->
+        <!-- <link rel="stylesheet" href="css/style-ltr.css"> -->
+        <!-- responsive style file -->
+        <link rel="stylesheet" href="css/responsive.css">
+    
+<body>
+    <main>
+        <!-- start header -->
+        <header>
+            <!-- header top section -->
+            <section id="top_section " class="mt-4 mb-4">
+                <div class="container">
+                    <div class="flex_between">
+
+                        <div class=" flex_center">
+
+                                <!-- suadia -->
+                                <button class="btn flex_center suadia_flag">
+                                    <img src="imgs/saudi-arabia (4).png" alt="saudia flag">
+                                    <span>السعودية</span>
+                                </button>
+
+
+                                <!-- account insert this if the account logins -->
+                                <a href="account.html" class="personal_account flex_center">
+                                    <img src="imgs/personal.PNG" alt="personal image">
+                                    <span>احمد سمير</span>
+                                </a>
+
+                                <!-- account insert this if the account does not login -->
+                                <!-- <a href="#" class="personal_account flex_center">
+                                  <img src="imgs/Path 290.png" alt="personal image">
+                                  <span>تسجيل الدخول</span>
+                                </a> -->
+                                
+
+                        </div>
+
+                        <!-- USA -->
+                        <button class="btn flex_center suadia_flag">
+                            <img src="imgs/united-states-of-america (1).png" alt="USA flag">
+                            <span>english</span>
+                        </button>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- header bottom section -->
+            <section id="bottom_section">
+                <div class="container">
+                    <div class="flex_between">
+
+                      <!-- toggle navbar -->
+                      <div class="hamburger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                      </div>
+
+                        <!-- logo -->
+                        <div id="logo">
+                            <a href="index.html"><img src="imgs/Group 4.png" alt="Logo"></a>
+                        </div>
+
+                        <!-- navigation -->
+                        <nav class="navbar navbar-expand-lg navbar-light navSmallScreen">
+
+                            <div class="container-fluid">
+
+                              <div class="navbar-collapse" id="navbarSupportedContent">
+
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                                  <li class="nav-item">
+                                    <a class="nav-link " aria-current="page" href="index.html">الرئيسية</a>
+                                  </li>
+
+                                  <li class="nav-item">
+                                    <a class="nav-link " href="allCategories.html">جميع الاقسام</a>
+                                  </li>
+
+                                  <li class="nav-item">
+                                    <a class="nav-link " href="occations.html">مناسباتي</a>
+                                  </li>
+
+                                  <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      طلباتي
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                      <li><a class="dropdown-item text-center fw-bold" href="currentOrders.html">طلبات حالية</a></li>
+                                      <li><a class="dropdown-item text-center fw-bold" href="currentOrders.html">طلبات منتهية</a></li>
+                                    </ul>
+                                  </li>
+
+                                  <li class="nav-item">
+                                    <a class="nav-link " href="favorites.html" >المفضلة</a>
+                                  </li>
+                                </ul>
+
+                              </div>
+                            </div>
+                        </nav>
+
+                        <!-- interaction( search / cart ) -->
+                        <div class="userInteraction flex_between">
+
+                            <button class="btn search main_color" type="button" data-bs-toggle="modal" data-bs-target="#searchModal"> 
+                                  <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  
+                                  <div class="modal-body">
+
+                                  <form action="">
+                                    <div class="mb-3">
+                                      <label for="search" class="form-label">ابحث عن ماتريد</label>
+                                      <input type="text" class="form-control" id="search" placeholder="عن ماذا تبحث ؟" autofocus>
+                                    </div>
+                                  </form>
+                                      
+
+                                  </div>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                            
+
+                                                        <a href="cart.html" class="cart main_color"> <i class="fa-solid fa-cart-shopping"></i> </a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </header>
+        <!-- end header -->
+
+        <section id="account_info" class="mt-5 mb-5">
+
+          <div class="container">
+
+            <!-- start accordions  -->
+
+            <div class="accordion" id="accordionExample">
+
+              <!-- single accordion => الملف الشخصي -->
+              <div class="accordion-item mb-3">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <div class="d-flex align-items-center">
+                      <!-- accordion header icon -->
+                      <img src="imgs/profileo.png" alt="" class="accHeaderIcon">
+                      <h5 class="fw-bold"> الملف الشخصي </h5>
+                    </div>
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+
+                      <!-- start personal form  -->
+                      <form action="" id="personalInfoForm" class=" mt-5">
+
+                        <!-- personal image  -->
+                        <div class="personalImage d-flex justify-content-center align-content-center mx-auto">
+
+                          <!-- img previewed  -->
+                          <img src="imgs/personal.PNG" alt="personal image" class="ImagedPreviewed">
+
+                          <!-- input previewed  -->
+                          <div class="inputPreview">
+                            <span class="inputicon">
+                              <i class="fa-solid fa-pen-to-square white_color"></i>
+                            </span>
+                            <!-- input that previwed  -->
+                            <input type="file" class="personalInputImage" name="" accept="image/*">
+                          </div>
+                        </div>
+
+                        <!-- username  -->
+                        <div class="form-group mb-3 mt-3">
+                          <label for="user_name" class="form-label fw-bold"> اسم المستخدم </label>
+                          <input type="text" class="form-control" id="user_name" name=""  placeholder="احمد سمير">
+                          <i class="fa-solid fa-user"></i>
+                        </div>
+
+                        <!-- phone number  -->
+                        <div class="form-group mb-3 mt-3">
+                          <label for="phone_number" class="form-label fw-bold"> رقم الجوال </label>
+                          <input type="tel" class="form-control" id="phone_number" name=""  placeholder="01013746111">
+                          <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+
+                        <!-- email  -->
+                        <div class="form-group mb-3 mt-3">
+                          <label for="email" class="form-label fw-bold"> البريد الالكتروني </label>
+                          <input type="email" class="form-control" id="email" name=""  placeholder="ahmadsamerlego@gmail.com">
+                          <i class="fa-solid fa-envelope"></i>
+                        </div>
+
+                        <!-- address  -->
+                        <div class="form-group mb-3 mt-3">
+                          <label for="city" class="form-label fw-bold"> المدينة </label>
+                          <select class="form-select" aria-label="Default select example">
+                              <option selected hidden disabled>اختر المدينة</option> <!-- do not loop on this option , only for placeholder  -->
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                          </select>
+                          <i class="fa-solid fa-location-dot"></i>
+
+                          <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+
+                        <!-- password  -->
+                        <div class="form-group mb-3 mt-3">
+                          <label for="password" class="form-label fw-bold"> كلمة المرور </label>
+                          <input type="password" class="form-control password" id="password" name=""  placeholder="الرجاء ادخال كلمة المرور">
+                          <i class="fa-solid fa-unlock-keyhole"></i>
+
+                          <span class="togglePass"><i class="fa-solid fa-eye"></i></span>
+                        </div>
+
+                        <!-- confirm  password  -->
+                        <div class="form-group mb-3 mt-3">
+                          <label for="confirmPass" class="form-label fw-bold"> تأكيد كلمة المرور </label>
+                          <input type="password" class="form-control password" id="confirmPass" name=""  placeholder="الرجاء ادخال كلمة المرور">
+                          <i class="fa-solid fa-unlock-keyhole"></i>
+
+                          <span class="togglePass"><i class="fa-solid fa-eye"></i></span>
+                        </div>
+
+                        <!-- save  -->
+                        <div class="d-flex justify-content-center mx-auto mt-3 mb-5">
+                          <button class="btn button1"> حفظ </button>
+                        </div>
+                      </form>
+                      <!-- end personal form  -->
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- single accordion => المحفظة -->
+              <div class="accordion-item mb-3">
+
+                <!-- accordion header  -->
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <div class="d-flex align-items-center">
+                      <!-- accordion header icon -->
+                      <img src="imgs/waellet.png" alt="" class="accHeaderIcon">
+                      <h5 class="fw-bold"> المحفظة </h5>
+                    </div>
+                  </button>
+                </h2>
+
+                <!-- accordion body  -->
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body mt-5 mb-5 flex_column">
+
+                    <!-- wallet image  -->
+                    <div class="walletImage">
+                      <img src="imgs/wallet.png" alt="wallet imgae">
+                    </div>
+
+                    <!-- current finance  -->
+                    <p class="fw-6 gray_color mt-5"> رصيدك الحالي </p>
+
+                    <h3 class="fw-bold"> 500.00 </h3>
+                    <h6 class="mb-4">ريال سعودي</h6>
+
+                    <button type="button" class="btn button1">شحن رصيد</button>
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- single accordion => رصيد النقاط -->
+              <div class="accordion-item mb-3">
+
+                <!-- accordion header  -->
+                <h2 class="accordion-header" id="headinFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <div class="d-flex align-items-center">
+                      <!-- accordion header icon -->
+                      <img src="imgs/comemdents.png" alt="" class="accHeaderIcon">
+                      <h5 class="fw-bold"> رصيد النقاط </h5>
+                    </div>
+                  </button>
+                </h2>
+
+                <!-- accordion body  -->
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headinFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body mt-5 mb-5 flex_column">
+
+                    
+                    <!-- wallet image  -->
+                    <div class="walletImage">
+                      <img src="imgs/wallet.png" alt="wallet imgae">
+                    </div>
+
+                    <!-- current finance  -->
+                    <p class="fw-6 gray_color mt-5"> رصيد نقاطك </p>
+
+                    <h3 class="fw-bold"> 2500 نقطة </h3>
+
+                    
+                    <p class="fw-6 gray_color"> يعادل </p>
+
+                    <h4 class="fw-bold"> 100 </h4>
+
+                    <h6 class="mb-4">ريال سعودي</h6>
+
+                    <button type="button" class="btn button1">تحويل الى المحفظة</button>
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- single accordion => عناويني -->
+              <div class="accordion-item mb-3">
+
+                <!-- accordion header  -->
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <div class="d-flex align-items-center">
+                      <!-- accordion header icon -->
+                      <img src="imgs/comments.png" alt="" class="accHeaderIcon">
+                      <h5 class="fw-bold"> عناويني </h5>
+                    </div>
+                  </button>
+                </h2>
+
+                <!-- accordion body  -->
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+
+                        <form class="mapForm">
+
+                          <div class="mapsGroups">
+
+                            <!-- this section concerned with google map and its modal all cloned down in the script , so put your inputs names here and down in the script  -->
+                            <div class="form-group mt-3 mb-3 map_group">
+                              <label for="" class="fw-bold mb-3">العنوان 1</label>
+                              <div class="location">
+    
+                                  <!-- input trigger modal -->
+                                  <div class="form-group-map">
+                                    <img src="imgs/noun_my location_1160820.png" alt="" class="locationIcon">
+
+                                    <!-- main input  -->
+                                    <input type="text" readonly  class="form-control address" name="">
+                                  
+                                    <!-- edit map  -->
+                                    <button type="button" class="btn editMap" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-pen-to-square"></i></button>
+                                    <!-- remove map  -->
+                                    <button type="button" class="btn removeMap" onclick="removeMapIn(this)"><i class="fa-solid fa-trash"></i></button>
+                                    
+                                  </div>
+                                  
+                                  <!-- Modal -->
+                                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                      <div class="modal-dialog">
+                                          <div class="modal-content">
+                                              <div class="modal-header">
+    
+    
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+                                              </div>
+                                              <div class="modal-body">
+                                                  <div class="map">
+    
+                                                    <input  style="margin-top: 52px;width: 47%;"  class="pac-input form-control controls" type="text" placeholder="Search Box" style="color:#333">
+    
+              
+                                                      <div class="form-group">
+                                                          <div class="googleMap" style=" height: 400px;"></div>
+                                                      </div>
+              
+                                                  </div>
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+
+
+                          </div>
+
+                          <!-- new map group  -->
+                          <div class="flex_center mt-5">
+                            <button class="btn button1 rounded-3 px-4 newMapGroup" type="button"> عنوان جديد </button>
+                          </div>
+
+                        </form>
+    
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- single accordion => الشكاوي المقدمة -->
+              <div class="accordion-item mb-3">
+
+                <!-- accordion header  -->
+                <h2 class="accordion-header" id="headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    <div class="d-flex align-items-center">
+                      <!-- accordion header icon -->
+                      <img src="imgs/termds.png" alt="" class="accHeaderIcon">
+                      <h5 class="fw-bold"> الشكاوي المقدمة </h5>
+                    </div>
+                  </button>
+                </h2>
+
+                <!-- accordion body  -->
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    
+                    <section id="complainsCards" class="mt-4 mb-4">
+                      
+                      <!-- single accordion  -->
+                      <div class="single_complain flex_between">
+
+                        <!-- complain info  -->
+                        <div class="comDEt d-flex">
+                          <!-- complain image  -->
+                          <div class="complainImage">
+                            <img src="imgs/Group 4.png" alt="complain image">
+                          </div>
+
+                          <!-- complain details  -->
+                          <div class="complainDetails">
+                            <h6 class="fw-bold mb-2"> رقم الشكوي : 12345678 </h6>
+                            <p class="gray_color fw-6 mb-4"> هذا النص هو مثال على نص يمكن ان يستدل </p>
+
+                            <p class="d-flex align-items-baseline fw-6">
+                              <i class="fa-regular fa-file-zipper gray_color"></i>
+                              <span class="gray_color"> الحالة : </span>
+                              <span class="main_color"> تمت المعالجة </span>
+                            </p>
+
+                          </div>
+                        </div>
+
+                        <!-- complain more  -->
+                        <div class="flex_column">
+                          <span class="fw-6 gray_color mb-5"> منذ 1 ساعة </span>
+
+                          <button class="btn fw-6" data-bs-toggle="modal" data-bs-target="#morecomplain" type="button">
+                            عرض المزيد
+                            <i class="fa-solid fa-chevron-left main_color"></i>
+                          </button>
+                        </div>
+
+                        <!-- more complain info modal  -->
+                          <div class="modal fade" id="morecomplain" tabindex="-1"aria-labelledby="morecomplainLabel" aria-hidden="true">
+
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title mx-auto fw-bold" id="addOccasionLabel"> 
+                                    تفاصيل الشكوى
+                                  </h5>
+                                  <button class="btn main_bg rounded-circle"> <i class="fa-solid fa-x white_color" data-bs-dismiss="modal" aria-label="Close"></i> </button>
+                                </div>
+                                <div class="modal-body flex_column complainModal">
+                                  
+                                  <!-- complain image  -->
+                                  <div class="moComImg">
+                                    <img src="imgs/personal.PNG" alt="personal image">
+                                  </div>
+                                  
+                                  <!-- name -->
+                                  <p class="fw-6"> احمد سمير </p>
+
+                                  <!-- details  -->
+                                  <div class="d-flex">
+
+                                    <div class="ComplainNum">
+                                      <p class="fw-6"> رقم الشكوى </p>
+                                      <p class="compSmallP">222222222</p>
+                                    </div>
+
+                                    <div>
+                                      <p class="fw-6"> تاريخ الشكوى </p>
+                                      <p class="compSmallP">منذ 30 دقيقة</p>
+                                    </div>
+
+                                  </div>
+
+                                  <!-- description  -->
+                                  <div class="mt-4">
+                                    <p class="fw-6 text-center"> تفاصيل الشكوى </p>
+
+                                    <p class="text-center compSmallP"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis perferendis quis corrupti sit aliquam laboriosam, eveniet quos magnam nobis iste dolorum, sed harum culpa! Porro nesciunt delectus aperiam, eaque quasi illo esse! Dolorum porro atque commodi possimus impedit rem cum. </p>
+                                  </div>
+
+                                  <!-- attachment images  -->
+                                  <div class="attachmentImages d-flex">
+                                    <img src="imgs/NoPath - Copy (14).png" alt="attachment image">
+                                    <img src="imgs/NoPath - Copy (14).png" alt="attachment image">
+                                    <img src="imgs/NoPath - Copy (14).png" alt="attachment image">
+                                  </div>
+
+                                  <div class="cardComp mt-4 d-flex">
+
+                                    <div>
+                                      <img src="imgs/Group 4.png" alt="">
+                                    </div>
+
+                                    <div>
+                                      <p class="fw-6"> رقم الطلب : #333333 </p>
+                                      <p class="gray_color compSmallP"> اسم المندوب : احمد سمير </p>
+                                    </div>
+
+                                    <!-- time  -->
+                                    <div class="timming">
+                                      <p class="gray_color compSmallP"> منذ 1 ساعة </p>
+                                    </div>
+
+
+                                  </div>
+                                </div>
+                                
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+
+                    </section>
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- single accordion => من نحن -->
+              <div class="accordion-item mb-3">
+
+                <!-- accordion header  -->
+                <h2 class="accordion-header" id="headingSeven">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collpaseSeven" aria-expanded="false" aria-controls="collpaseSeven">
+                    <div class="d-flex align-items-center">
+                      <!-- accordion header icon -->
+                      <img src="imgs/profile.png" alt="" class="accHeaderIcon">
+                      <h5 class="fw-bold"> من نحن </h5>
+                    </div>
+                  </button>
+                </h2>
+
+                <!-- accordion body  -->
+                <div id="collpaseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+
+                    <!-- about image  -->
+                    <div class="aboutImage">
+                      <img src="imgs/Group 4424.png" alt="about us image" class="mb-4">
+
+                      <p class="fw-6 aboutP">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam illo libero recusandae, minima atque eveniet consequuntur ex similique dolorum ipsa voluptatum aspernatur, explicabo doloribus quas nihil eum dolore temporibus, expedita rerum. Ab ea dolores facere non optio asperiores officiis. Accusantium nam nobis, aliquid facere est cupiditate quasi sed quia! Possimus!
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- single accordion => تواصل معنا -->
+              <div class="accordion-item mb-3">
+
+                <!-- accordion header  -->
+                <h2 class="accordion-header" id="headingEa">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEaight" aria-expanded="false" aria-controls="collapseEaight">
+                    <div class="d-flex align-items-center">
+                      <!-- accordion header icon -->
+                      <img src="imgs/contactus.png" alt="" class="accHeaderIcon">
+                      <h5 class="fw-bold"> تواصل معنا </h5>
+                    </div>
+                  </button>
+                </h2>
+
+                <!-- accordion body  -->
+                <div id="collapseEaight" class="accordion-collapse collapse" aria-labelledby="headingEa" data-bs-parent="#accordionExample">
+                  <div class="accordion-body mt-5 mb-5">
+
+                    <!-- logo  -->
+                    <div class="contactLogo">
+                      <img src="imgs/Group 4.png" alt="contact logo">
+                    </div>
+
+
+                    <form action="" class="ContactForm flex-column align-items-center">
+
+                      <div class="d-flex contactPainrInput">
+                        <div class="form-group">
+                          <input type="text" name="usernamee" required />
+                          <span class="highlight"></span>
+                          <span class="bar"></span>
+                          <label for="usernamee">الاسم</label>
+                        </div>
+  
+                        <div class="form-group">
+                          <input type="tel" name="phone" required />
+                          <span class="highlight"></span>
+                          <span class="bar"></span>
+                          <label for="phone">رقم الهاتف</label>
+                        </div>
+                        
+                      </div>
+
+                      <div class="form-group form-group2">
+                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label for="message">الرسالة</label>
+                      </div>
+
+                    </form>
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- single accordion => سياسة الخصوصية -->
+              <div class="accordion-item mb-3">
+                <h2 class="accordion-header" id="headingSe">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSEf" aria-expanded="false" aria-controls="collapseSEf">
+                    <div class="d-flex align-items-center">
+                      <!-- accordion header icon -->
+                      <img src="imgs/walletr.png" alt="" class="accHeaderIcon">
+                      <h5 class="fw-bold"> سياسة الخصوصية </h5>
+                    </div>
+                  </button>
+                </h2>
+                <div id="collapseSEf" class="accordion-collapse collapse" aria-labelledby="headingSe" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+
+                    <!-- about image  -->
+
+                    <!-- logo  -->
+                    <div class="contactLogo mb-4">
+                      <img src="imgs/Group 4.png" alt="contact logo">
+                    </div>
+
+
+                    <div class="aboutImage">
+
+                      <p class="fw-6 aboutP">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam illo libero recusandae, minima atque eveniet consequuntur ex similique dolorum ipsa voluptatum aspernatur, explicabo doloribus quas nihil eum dolore temporibus, expedita rerum. Ab ea dolores facere non optio asperiores officiis. Accusantium nam nobis, aliquid facere est cupiditate quasi sed quia! Possimus!
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- single accordion => الشروط والاحكام -->
+              <div class="accordion-item mb-3">
+                <h2 class="accordion-header" id="headingERw">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collpsesea" aria-expanded="false" aria-controls="collpsesea">
+                    <div class="d-flex align-items-center">
+                      <!-- accordion header icon -->
+                      <img src="imgs/termds.png" alt="" class="accHeaderIcon">
+                      <h5 class="fw-bold"> الشروط والاحكام </h5>
+                    </div>
+                  </button>
+                </h2>
+                <div id="collpsesea" class="accordion-collapse collapse" aria-labelledby="headingERw" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+
+                    <!-- about image  -->
+                    <!-- logo  -->
+                    <div class="contactLogo mb-4">
+                      <img src="imgs/Group 4.png" alt="contact logo">
+                    </div>
+
+
+                    <div class="aboutImage">
+
+                      <p class="fw-6 aboutP">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam illo libero recusandae, minima atque eveniet consequuntur ex similique dolorum ipsa voluptatum aspernatur, explicabo doloribus quas nihil eum dolore temporibus, expedita rerum. Ab ea dolores facere non optio asperiores officiis. Accusantium nam nobis, aliquid facere est cupiditate quasi sed quia! Possimus!
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- single accordion => الشروط والاحكام -->
+              <div class="accordion-item mb-3">
+                <h2 class="accordion-header" id="headingERw">
+                  <a class="accordion-button collapsed" href="index.html" >
+                    <div class="d-flex align-items-center">
+                      <!-- accordion header icon -->
+                      
+                      <div class="accHeaderIcon logoutProile">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                      </div>
+
+                      <h5 class="fw-bold"> تسجيل الخروج </h5>
+                    </div>
+                  </a>
+                </h2>
+                
+              </div>
+
+    
+            </div>
+          </div>
+
+        </section>
+        <!-- start footer  -->
+        <footer class="mt-5 mb-5">
+          <div class="main_container">
+            <div class="row">
+
+              <div class="col-md-3 mb-3">
+
+                <h6 class="footer_head"> تعرف علينا </h6>
+
+                <!-- main Links -->
+                <div class="mainLinks d-flex justify-content-start align-items-start flex-column">
+
+                  <a href="#" class="mb-2"> من نحن </a>
+                  <a href="#" class="mb-2"> الشروط والاحكام </a>
+                  <a href="#" class="mb-2"> اسئلة مكررة </a>
+                  <a href="#" class="mb-2"> اتصل بنا </a>
+
+                </div>
+
+              </div>
+
+              <div class="col-md-5 mb-3">
+                <h6 class="footer_head"> تواصل معنا </h6>
+
+                <!-- socail media -->
+                <div class="socialMedia d-flex">
+                  <a href="#"> <img src="imgs/facebook (7).png" alt="facebook"> </a>
+                  <a href="#"> <img src="imgs/twitter (6).png" alt="twitter"> </a>
+                  <a href="#"> <img src="imgs/instagram (6).png" alt="instagram"> </a>
+                  <a href="#"> <img src="imgs/linkedin.png" alt="linkedin"> </a>
+                  <a href="#"> <img src="imgs/youtube (3).png" alt="youtube"> </a>
+                </div>
+
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <h6 class="footer_head"> عمليات الدفع </h6>
+
+                <!-- payment methods -->
+                <div class="paymentMethods">
+                  
+                  <img src="imgs/Group 70450.png" alt="">
+                  <img src="imgs/Group 2183.png" alt="">
+                  <img src="imgs/Group 2182.png" alt="">
+                  <img src="imgs/Group 2181.png" alt="">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- end footer  -->
+
+        <!-- start copy right  -->
+        <section id="copyRight" class="pt-3">
+          <div class="main_container">
+            <div class="copyRightContent d-flex justify-content-between align-items-center">
+              <p class="fw-6"> جميع الحقوق محفوظة لدى pikrose 2022 </p>
+
+              <p class="fw-6"> تصميم <a href="https://aait.sa/"> أوامر الشبكة </a> </p>
+            </div>
+          </div>
+        </section>
+        <!-- end copy right  -->
+
+    </main>
+
+        <!-- fontawesome v.6 script cdn  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js" integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- bootstrap v.5 script cdn -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <!-- jquery v.3 cdn -->
+        <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+        <!-- flat picker  -->
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+        <!-- input tel input plugin  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/8.4.7/js/intlTelInput.js"></script>
+
+        <!-- main scripts -->
+        <script src="js/main.js"></script>
+
+
+        <!-- remove map group  -->
+        <script>
+          function removeMapIn(even){
+            even.closest('.map_group').remove()
+          }
+        </script>
+
+        <!-- google map api  -->
+        <script type="text/javascript" src='https://maps.google.com/maps/api/js?&libraries=places&key=AIzaSyA9_ve_oT3ynCaAF8Ji4oBuDjOhWEHE92U'></script>
+        <script  src="js/location-picker.js"></script>
+
+        <!-- basic google map script => for locations exists by default -->
+        <script>
+          var map;
+          var marker;
+          var myLatlng = new google.maps.LatLng(24.774265, 46.738586);
+          var geocoder = new google.maps.Geocoder();
+          var infowindow = new google.maps.InfoWindow();
+      
+
+          function initMap1() {
+
+              var mapOptions = {
+                  zoom: 10,
+                  center: myLatlng,
+                  mapTypeId: google.maps.MapTypeId.ROADMAP
+              };
+      
+              map = new google.maps.Map(document.querySelector(".googleMap"), mapOptions);
+      
+              marker = new google.maps.Marker({
+                  map: map,
+                  position: myLatlng,
+                  draggable: true
+              });
+      
+              geocoder.geocode({ 'latLng': myLatlng }, function (results, status) {
+                  if (status == google.maps.GeocoderStatus.OK) {
+                      if (results[0]) {
+                          $('#latitude,#longitude').show();
+                          $('.address').val(results[0].formatted_address);
+                          $('#resultAddress').val(results[0].formatted_address);
+                          $('#latitude').val(marker.getPosition().lat());
+                          $('#longitude').val(marker.getPosition().lng());
+                          infowindow.setContent(results[0].formatted_address);
+                          infowindow.open(map, marker);
+                      }
+                  }
+              });
+      
+              google.maps.event.addListener(marker, 'dragend', function () {
+      
+                  geocoder.geocode({ 'latLng': marker.getPosition() }, function (results, status) {
+                      if (status == google.maps.GeocoderStatus.OK) {
+                          if (results[0]) {
+                              $('.address').val(results[0].formatted_address);
+                              $('#resultAddress').val(results[0].formatted_address);
+                              $('#lat').val(marker.getPosition().lat());
+                              $('#lng').val(marker.getPosition().lng());
+                              infowindow.setContent(results[0].formatted_address);
+                              infowindow.open(map, marker);
+                          }
+                      }
+                  });
+              });
+      
+              var searchBox = new google.maps.places.SearchBox(document.querySelector('.pac-input'));
+              map.controls[google.maps.ControlPosition.TOP_CENTER].push(document.querySelector('.pac-input'));
+              google.maps.event.addListener(searchBox, 'places_changed', function() {
+                  searchBox.set('map', null);
+      
+      
+                  var places = searchBox.getPlaces();
+      
+                  var bounds = new google.maps.LatLngBounds();
+                  var i, place;
+                  for (i = 0; place = places[i]; i++) {
+                      (function(place) {
+                          var marker = new google.maps.Marker({
+      
+                              position: place.geometry.location
+                          });
+                          marker.bindTo('map', searchBox, 'map');
+                          google.maps.event.addListener(marker, 'map_changed', function() {
+                              if (!this.getMap()) {
+                                  this.unbindAll();
+                              }
+                          });
+                          bounds.extend(place.geometry.location);
+      
+      
+                      }(place));
+      
+                  }
+                  map.fitBounds(bounds);
+                  searchBox.set('map', map);
+                  map.setZoom(Math.min(map.getZoom(),12));
+      
+              });
+          }
+  
+      
+          google.maps.event.addDomListener(window, 'load', initMap1);
+      
+      
+        </script>
+
+
+
+      <!-- new map group => for created ones -->
+      <script>
+        var inc = 2;
+        let addMapGroup = document.querySelector('.newMapGroup');
+        addMapGroup.addEventListener('click', ()=>{
+
+          // cloned input group 
+          let clonedMapGroup = `
+          <div class="form-group mt-3 mb-3 map_group">
+                            <label for="" class="fw-bold mb-3">العنوان <span>${inc}</span></label>
+                            <div class="location">
+  
+                                <!-- input trigger modal -->
+                                <div class="form-group-map">
+                                  <img src="imgs/noun_my location_1160820.png" alt="" class="locationIcon">
+
+                                  <!-- main input  -->
+                                  <input type="text" readonly  class="form-control address${inc}" name="">
+                                
+                                  <!-- edit map  -->
+                                  <button type="button" class="btn editMap" data-bs-toggle="modal" data-bs-target="#exampleModal${inc}"><i class="fa-solid fa-pen-to-square"></i></button>
+                                  <!-- remove map  -->
+                                  <button type="button" class="btn removeMap" onclick="removeMapIn(this)"><i class="fa-solid fa-trash"></i></button>
+                                  
+                                </div>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal${inc}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+  
+  
+                                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="map">
+  
+                                                  <input  style="margin-top: 52px;width: 47%;"  class="pac-input${inc} form-control controls" type="text" placeholder="Search Box" style="color:#333">
+  
+            
+                                                    <div class="form-group">
+                                                        <div class="googleMap${inc}" style=" height: 400px;"></div>
+                                                    </div>
+            
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+          `
+          
+          // append google map input group 
+          document.querySelector('.mapsGroups').insertAdjacentHTML('beforeend' , clonedMapGroup);
+          
+          // initialize google map for created 
+          getCurrent(inc)
+
+          initMap(inc);
+
+          // increase counter 
+          inc++;
+
+        })
+      </script>
+
+      <!-- new map group => for created ones -->
+
+      <script>
+         
+    
+          function initMap(inc){
+
+
+            var map;
+            var marker;
+            var geocoder = new google.maps.Geocoder();
+            var infowindow = new google.maps.InfoWindow();
+            var myLatlng = new google.maps.LatLng(24.774265, 46.738586);
+
+              var mapOptions = {
+                  zoom: 10,
+                  center: myLatlng,
+                  mapTypeId: google.maps.MapTypeId.ROADMAP
+              };
+      
+              map = new google.maps.Map(document.querySelector(`.googleMap${inc}`), mapOptions);
+      
+              marker = new google.maps.Marker({
+                  map: map,
+                  position: myLatlng,
+                  draggable: true
+              });
+
+
+            
+              geocoder.geocode({ 'latLng': myLatlng }, function (results, status) {
+                  if (status == google.maps.GeocoderStatus.OK) {
+                      if (results[0]) {
+                          // $('#latitude,#longitude').show();
+                          $(`.address${inc}`).val(results[0].formatted_address);
+                          // $('#resultAddress').val(results[0].formatted_address);
+                          // $('#latitude').val(marker.getPosition().lat());
+                          // $('#longitude').val(marker.getPosition().lng());
+                          infowindow.setContent(results[0].formatted_address);
+                          infowindow.open(map, marker);
+                      }
+                  }
+              });
+      
+              google.maps.event.addListener(marker, 'dragend', function () {
+      
+                  geocoder.geocode({ 'latLng': marker.getPosition() }, function (results, status) {
+                      if (status == google.maps.GeocoderStatus.OK) {
+                          if (results[0]) {
+                              $(`.address${inc}`).val(results[0].formatted_address);
+                              // $('#resultAddress').val(results[0].formatted_address);
+                              // $('#lat').val(marker.getPosition().lat());
+                              // $('#lng').val(marker.getPosition().lng());
+                              infowindow.setContent(results[0].formatted_address);
+                              infowindow.open(map, marker);
+                          }
+                      }
+                  });
+              });
+      
+              var searchBox = new google.maps.places.SearchBox(document.querySelector(`.pac-input${inc}`));
+              map.controls[google.maps.ControlPosition.TOP_CENTER].push(document.querySelector(`.pac-input${inc}`));
+              google.maps.event.addListener(searchBox, 'places_changed', function() {
+                  searchBox.set('map', null);
+      
+      
+                  var places = searchBox.getPlaces();
+      
+                  var bounds = new google.maps.LatLngBounds();
+                  var i, place;
+                  for (i = 0; place = places[i]; i++) {
+                      (function(place) {
+                          var marker = new google.maps.Marker({
+      
+                              position: place.geometry.location
+                          });
+                          marker.bindTo('map', searchBox, 'map');
+                          google.maps.event.addListener(marker, 'map_changed', function() {
+                              if (!this.getMap()) {
+                                  this.unbindAll();
+                              }
+                          });
+                          bounds.extend(place.geometry.location);
+      
+      
+                      }(place));
+      
+                  }
+                  map.fitBounds(bounds);
+                  searchBox.set('map', map);
+                  map.setZoom(Math.min(map.getZoom(),12));
+      
+              });
+
+          }   
+          google.maps.event.addDomListener(window, 'load', initMap);
+
+        
+          
+          
+      </script>
+
+
+      <!-- different scripts  -->
+      <script>
+
+        // personal image preview 
+        let imageInput = document.querySelector('.personalInputImage');
+        let imagePreviewed = document.querySelector('.ImagedPreviewed');
+        imageInput.addEventListener('change', (e)=>{
+
+          imagePreviewed.src = URL.createObjectURL(e.target.files[0]) ;
+        }) ;
+
+
+        // initialize intl tel input plugin 
+        $("#phone_number").intlTelInput({})
+
+
+
+        // show and hide password script
+        let passEye = document.querySelectorAll('.togglePass');
+        passEye.forEach( (eye)=>{
+          eye.addEventListener('click', (e)=>{
+            
+            let passwordInput = eye.closest('.form-group').querySelector('.password');
+
+            if( passwordInput.type == 'password' ){
+              passwordInput.type = 'text'
+              eye.children[0].classList.add('fa-eye-slash')
+            }else if( passwordInput.type == 'text' ){
+              passwordInput.type = 'password';
+              eye.children[0].classList.add('fa-eye')
+            }
+            
+          })
+        } )
+
+      </script>
+
+
+
+      <script type="text/javascript">
+
+        
+        function getCurrent(inc){
+          $(`.googleMap${inc}`).locationpicker({
+                inputBinding: {
+                    // latitudeInput: $("#lat"),
+                    // longitudeInput: $("#lng"),
+                    locationNameInput: $(`.address${inc}`)
+                    
+                },
+            });
+            navigator.geolocation.getCurrentPosition(function(position) {
+                $(`.googleMap${inc}`).locationpicker('location', {
+                    latitude: position.coords.latitude,
+                    longitude: position.coords.longitude,
+                    inputBinding: {
+                        // latitudeInput: $("#lat"),
+                        // longitudeInput: $("#lng"),
+                        locationNameInput: $(`.address${inc}`)
+                    },
+                });
+            });
+              // initMap()
+        }
+      </script>
+</body>
+</html>

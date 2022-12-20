@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> الطلبات الجالية </title>
+
+        <!-- fontawesome v.6 style cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- bootstrap v.5 style cdn -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        
+        <!-- animate css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+    
+        <!-- flat picker  -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+        <!-- main styles -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- english style  -->
+        <!-- <link rel="stylesheet" href="css/style-ltr.css"> -->
+        <!-- responsive style file -->
+        <link rel="stylesheet" href="css/responsive.css">
+    
+<body>
+    <main>
+        <!-- start header -->
+        <header>
+            <!-- header top section -->
+            <section id="top_section " class="mt-4 mb-4">
+                <div class="container">
+                    <div class="flex_between">
+
+                        <div class=" flex_center">
+
+                                <!-- suadia -->
+                                <button class="btn flex_center suadia_flag">
+                                    <img src="imgs/saudi-arabia (4).png" alt="saudia flag">
+                                    <span>السعودية</span>
+                                </button>
+
+
+                                <!-- account insert this if the account logins -->
+                                <a href="account.html" class="personal_account flex_center">
+                                    <img src="imgs/personal.PNG" alt="personal image">
+                                    <span>احمد سمير</span>
+                                </a>
+
+                                <!-- account insert this if the account does not login -->
+                                <!-- <a href="#" class="personal_account flex_center">
+                                  <img src="imgs/Path 290.png" alt="personal image">
+                                  <span>تسجيل الدخول</span>
+                                </a> -->
+                                
+
+                        </div>
+
+                        <!-- USA -->
+                        <button class="btn flex_center suadia_flag">
+                            <img src="imgs/united-states-of-america (1).png" alt="USA flag">
+                            <span>english</span>
+                        </button>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- header bottom section -->
+            <section id="bottom_section">
+                <div class="container">
+                    <div class="flex_between">
+
+                      <!-- toggle navbar -->
+                      <div class="hamburger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                      </div>
+
+                        <!-- logo -->
+                        <div id="logo">
+                            <a href="index.html"><img src="imgs/Group 4.png" alt="Logo"></a>
+                        </div>
+
+                        <!-- navigation -->
+                        <nav class="navbar navbar-expand-lg navbar-light navSmallScreen">
+
+                            <div class="container-fluid">
+
+                              <div class="navbar-collapse" id="navbarSupportedContent">
+
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                                  <li class="nav-item">
+                                    <a class="nav-link " aria-current="page" href="index.html">الرئيسية</a>
+                                  </li>
+
+                                  <li class="nav-item">
+                                    <a class="nav-link " href="allCategories.html">جميع الاقسام</a>
+                                  </li>
+
+                                  <li class="nav-item">
+                                    <a class="nav-link " href="occations.html">مناسباتي</a>
+                                  </li>
+
+                                  <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      طلباتي
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                      <li><a class="dropdown-item text-center fw-bold" href="currentOrders.html">طلبات حالية</a></li>
+                                      <li><a class="dropdown-item text-center fw-bold" href="currentOrders.html">طلبات منتهية</a></li>
+                                    </ul>
+                                  </li>
+
+                                  <li class="nav-item">
+                                    <a class="nav-link " href="favorites.html" >المفضلة</a>
+                                  </li>
+                                </ul>
+
+                              </div>
+                            </div>
+                        </nav>
+
+                        <!-- interaction( search / cart ) -->
+                        <div class="userInteraction flex_between">
+
+                            <button class="btn search main_color" type="button" data-bs-toggle="modal" data-bs-target="#searchModal"> 
+                                  <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  
+                                  <div class="modal-body">
+
+                                  <form action="">
+                                    <div class="mb-3">
+                                      <label for="search" class="form-label">ابحث عن ماتريد</label>
+                                      <input type="text" class="form-control" id="search" placeholder="عن ماذا تبحث ؟" autofocus>
+                                    </div>
+                                  </form>
+                                      
+
+                                  </div>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                            
+
+
+                            <a href="cart.html" class="cart main_color"> <i class="fa-solid fa-cart-shopping"></i> </a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </header>
+        <!-- end header -->
+
+
+        <!-- start cart details  -->
+        <section id="cart" class="mt-5 mb-5">
+            <div class="main_container">
+                <h4 class="fw-6 main_color mb-3"> السلة </h4>
+
+                <!-- cart items  -->
+                <section class="cart_items">
+                    
+                    <!-- single cart item  -->
+                    <div class="cart_item">
+
+                        <div class="allSides flex_between">
+
+                            <!-- right hand  -->
+                            <div class="rightHandSide d-flex">
+                                <!-- cart header image  -->
+                                <div class="cartImage">
+                                    <img src="imgs/close-up-hand-holding-beautiful-flowers.png" alt="cart image">
+                                </div>
+                                <!-- cart details  -->
+                                <div class="pt-4">
+                                    <p class="fw-6 fs-5 mb-4"> جوري وردي 34  </p>
+                                    <p class="gray_color1 fw-6">20 ريال</p>
+                                </div>
+                            </div>
+    
+                            <!-- left hand  -->
+                            <div class="cart_interaction d-flex justify-content-end align-items-end flex-column">
+    
+                                <!-- remove cart  -->
+                                <div class="removeCArt mb-3">
+                                    <button class="btn  d-flex justify-content-end">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </div>
+
+                                <!-- increase decrease  -->
+                                <div class="inc_dec d-flex align-items-baseline ">
+
+                                    <!-- increase button -->
+                                    <input type="button" onclick="incrementValue()" value="+" class="incOrders">
+                                    <!-- value number  -->
+                                    <input type="text" name="quantity" value="1"  size="1" class="fs-1 cartInputs main_color cart_number"/>
+                                    <!-- decrease button -->
+                                    <input type="button" onclick="decrementValue()" value="-" class="decOrders">
+
+                                  </div>
+    
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- message  -->
+                <section class="messages mt-5">
+                  <div class="flex_between messagesContainer">
+
+                    <div>
+
+                      <h4 class="d-flex align-items-center main_color">
+                        <i class="fa-solid fa-message"></i>
+                        الرسالة
+                      </h4>
+
+                      <p class="fw-6"> لقد نسيت اضافة رسالتك </p>
+                    </div>
+                  
+                    <!-- add card  -->
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn main_color addCardcart" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      اضافة بطاقة
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          
+                          <div class="modal-body px-5 pt-5">
+                            <!-- modal header  -->
+                            <h4 class="d-flex align-items-center ">
+                              <i class="fa-solid fa-message main_color"></i>
+                              الرسالة
+                            </h4>
+
+                            <form action="" class="ContactForm ContactForm2 flex-column">
+
+                              <div class="form-group ">
+                                <input type="text" name="to" id="to" required />
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label for="to">الى</label>
+                              </div>
+
+                              <div class="mb-3 textarea-group">
+                                <label for="exampleFormControlTextarea1" class="form-label mb-3">الرسالة</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                              </div>
+
+                              <div class="form-group ">
+                                <input type="text" name="from" id="from" required />
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label for="from">من</label>
+                              </div>
+
+                              <p class="fw-6 main_color mb-4"> عبر لها بقلبك </p>
+
+                              <div class="form-group ">
+                                <input type="text" name="from" id="link" required />
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label for="link " class="main_color">انسخ والصق رابط اغنية او فيديو</label>
+                              </div>
+
+                              <div class="flex_between">
+                                <p class="addCardcart main_color">اخفاء هوية الراسل</p>
+
+                                <input type="checkbox" class="form-check" name="">
+                              </div>
+
+                              <div class="d-flex justify-content-center mx-auto mt-3">
+                                <button class="btn button1"> تأكيد </button>
+                              </div>
+
+                            </form>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <!-- discount code  -->
+                <section class="discount_code mt-5">
+                  <div class="flex_between discount_code_container">
+
+                    <div>
+
+                      <h5 class="d-flex align-items-center ">
+                        <i class="fa-solid fa-tag"></i>
+                        ادخل كود الخصم
+                      </h5>
+
+                    </div>
+                  
+                    <!-- discount form  -->
+                    <form action="" class="discountForm">
+                      <div class="input-group mb-3">
+                    
+                        <input type="text" class="form-control" placeholder="برجاء ادخال كود الخصم">
+                        <button class="btn button1"  id="button-addon1">تأكيد</button>
+  
+                      </div>
+                    </form>
+                    
+
+                  </div>
+                </section>
+
+                <!-- price detaild  -->
+                <section class="price_details mt-5">
+                  <div class="flex_between mb-5">
+                    <span class="fw-6"> المجموع </span>
+                    <span class="fw-6"> 10ريال سعودي </span>
+                  </div>
+
+                  <div class="flex_between mb-5">
+                    <span class="fw-6"> المجموع </span>
+                    <span class="fw-6"> 10ريال سعودي </span>
+                  </div>
+
+                  <div class="flex_between mb-5">
+                    <span class="fw-6"> المجموع </span>
+                    <span class="fw-6"> 10ريال سعودي </span>
+                  </div>
+                </section>
+
+                <!-- confirm  -->
+                <div class="d-flex justify-content-center mt-4">
+                  <a href="confirmOrder.html" class="button1 mx-auto w-25">اتمام الطلب</a>
+                </div>
+            </div>
+        </section>
+        <!-- end cart details  -->
+
+        <!-- start footer  -->
+        <footer class="mt-5 mb-5">
+          <div class="main_container">
+            <div class="row">
+
+              <div class="col-md-3 mb-3">
+
+                <h6 class="footer_head"> تعرف علينا </h6>
+
+                <!-- main Links -->
+                <div class="mainLinks d-flex justify-content-start align-items-start flex-column">
+
+                  <a href="#" class="mb-2"> من نحن </a>
+                  <a href="#" class="mb-2"> الشروط والاحكام </a>
+                  <a href="#" class="mb-2"> اسئلة مكررة </a>
+                  <a href="#" class="mb-2"> اتصل بنا </a>
+
+                </div>
+
+              </div>
+
+              <div class="col-md-5 mb-3">
+                <h6 class="footer_head"> تواصل معنا </h6>
+
+                <!-- socail media -->
+                <div class="socialMedia d-flex">
+                  <a href="#"> <img src="imgs/facebook (7).png" alt="facebook"> </a>
+                  <a href="#"> <img src="imgs/twitter (6).png" alt="twitter"> </a>
+                  <a href="#"> <img src="imgs/instagram (6).png" alt="instagram"> </a>
+                  <a href="#"> <img src="imgs/linkedin.png" alt="linkedin"> </a>
+                  <a href="#"> <img src="imgs/youtube (3).png" alt="youtube"> </a>
+                </div>
+
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <h6 class="footer_head"> عمليات الدفع </h6>
+
+                <!-- payment methods -->
+                <div class="paymentMethods">
+                  
+                  <img src="imgs/Group 70450.png" alt="">
+                  <img src="imgs/Group 2183.png" alt="">
+                  <img src="imgs/Group 2182.png" alt="">
+                  <img src="imgs/Group 2181.png" alt="">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- end footer  -->
+
+        <!-- start copy right  -->
+        <section id="copyRight" class="pt-3">
+          <div class="main_container">
+            <div class="copyRightContent d-flex justify-content-between align-items-center">
+              <p class="fw-6"> جميع الحقوق محفوظة لدى pikrose 2022 </p>
+
+              <p class="fw-6"> تصميم <a href="https://aait.sa/"> أوامر الشبكة </a> </p>
+            </div>
+          </div>
+        </section>
+        <!-- end copy right  -->
+
+    </main>
+
+        <!-- fontawesome v.6 script cdn  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js" integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- bootstrap v.5 script cdn -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <!-- jquery v.3 cdn -->
+        <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+        <!-- wow.js cdn -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>  
+
+        <!-- main scripts -->
+        <script src="js/main.js"></script>
+
+
+
+        <script>
+            // remove cart item 
+            let remveCartButton = document.querySelectorAll('.removeCArt');
+            remveCartButton.forEach( (remEle)=>{
+                remEle.addEventListener('click', ()=>{
+                    remEle.closest('.cart_item').remove();
+                })
+            } )
+
+            // increase order
+            // var inc = 2;
+            // let increaseButton = document.querySelectorAll('.increaseOrder');
+            // increaseButton.forEach( (incOrder)=>{
+            //     incOrder.addEventListener('click', ()=>{
+            //         let incNum = document.querySelector('.cart_number');
+            //         incNum.innerHTML = inc;
+            //         inc++;
+
+            //     })
+            // } );
+
+            // // decrease order
+            // var dec = inc;
+            // let decreaseButton = document.querySelectorAll('.decreaseOrder');
+            // decreaseButton.forEach( (incOrder)=>{
+            //     incOrder.addEventListener('click', ()=>{
+            //         let incNum = document.querySelector('.cart_number');
+            //         incNum.innerHTML = dec;
+            //         dec--;
+
+            //     })
+            // } )
+
+
+
+            function incrementValue()
+            {
+                var value = parseInt(document.querySelector('.cart_number').value, 10);
+                value = isNaN(value) ? 0 : value;
+                    value++;
+                        document.querySelector('.cart_number').value = value;
+                
+            }
+            function decrementValue()
+            {
+                var value = parseInt(document.querySelector('.cart_number').value, 10);
+                value = isNaN(value) ? 0 : value;
+                if(value>1){
+                    value--;
+                        document.querySelector('.cart_number').value = value;
+                }
+
+            }
+        </script>
+    
+</body>
+</html>

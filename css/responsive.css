@@ -1,0 +1,252 @@
+/* All screens sizes  */
+
+
+/*Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+    .single_occasion{height: 130px;}
+    .occasions_cards .occasion_img img, .occasion_img2{ width: 150px;}
+    .main_container{ width: 80%; }
+    #occ_cards .occ_card.occ_card2{
+        width: 100%;
+        height: 350px;
+    }
+    #app .appImagePhone img{
+        position: relative;
+        display: flex;
+        margin: auto;
+        left: auto;
+        margin-top: 20px;
+        height: 200px;
+    }
+    #app .appsImgs img{ margin-left: 0; margin-right: 0; }
+    #app{margin-top: 0;}
+}
+
+/*Medium devices (tablets, less than 992px)*/
+
+@media (max-width: 991.98px) {
+    .appsImgs {
+        flex-direction: column;
+    }
+    .appsImgs img{margin-bottom: 12px;}
+     /* .intScreen{display: none;} */
+
+     .hamburger{
+        display: block;
+        position: relative;
+        cursor: pointer;
+        right: 0%;
+        top: 12%;
+        transform: translate(-5%, -50%);
+        z-index: 4;
+        transition: all 0.7s ease;
+        margin-top: 20px;
+    }
+    .navSmallScreen{
+        position: fixed;
+        background: #131418e3;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(50px at 90% -20%);
+        -webkit-clip-path: circle(50px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+        z-index: 2;
+        right: 0;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #bottom_section .nav-link{display: flex; justify-content: center; align-items: center; color: #fff !important;}
+    #bottom_section .nav-link.active::before{display: none;}
+    #bottom_section .nav-link::before{ display: none;}
+    .navSmallScreen.open{
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+    .navSmallScreen li{
+        opacity: 0;
+    }
+    .navSmallScreen li:nth-child(1){
+        transition: all 0.5s ease 0.2s;
+    }
+    .navSmallScreen li:nth-child(2){
+        transition: all 0.5s ease 0.4s;
+    }
+    .navSmallScreen li:nth-child(3){
+        transition: all 0.5s ease 0.6s;
+    }
+    .navSmallScreen li:nth-child(4){
+        transition: all 0.5s ease 0.7s;
+    }
+    .navSmallScreen li:nth-child(5){
+        transition: all 0.5s ease 0.8s;
+    }
+    .navSmallScreen li:nth-child(6){
+        transition: all 0.5s ease 0.9s;
+        margin: 0;
+    }
+    .navSmallScreen li:nth-child(7){
+        transition: all 0.5s ease 1s;
+        margin: 0;
+    }
+    li.fadee{
+        opacity: 1;
+    }
+
+    .contactPainrInput{
+        flex-direction: column;
+    }
+}
+
+/*Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {
+
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    #personalInfoForm .form-group{width: 100%;}
+    #personalInfoForm .form-group label, .mapForm .form-group label{font-size: 14px;}
+    #occ_cards .occ_card .occLink{
+        opacity: 1;
+        bottom: 10%;
+    }
+    .accordion-body{padding-left: 0 !important; padding-right: 0 !important;}
+    .mapForm .form-group input{ padding-left: 60px; }
+    .removeMap, .editMap{ background-color: transparent; }
+    .editMap{
+        left: 10%;
+    }
+    .single_complain, .comDEt{ flex-direction: column; }
+    .single_complain .complainImage img{ width: 70px; }
+    .comDEt { flex-direction: column; justify-content: center; align-items: center; }
+    .comDEt img{ margin-bottom: 12px; }
+    .cardComp , .rightHandSide ,.info_cards .info_card{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .info_cards .info_card .info_image img{ margin-bottom: 12px; }
+    .allSides { flex-direction: column; }
+    .cart_item .removeCArt{margin: auto !important; margin-top: 18px !important;}
+    .messagesContainer{ display: flex; flex-direction: column; }
+    .discount_code_container{ display: flex; flex-direction: column; }
+    .discountForm {
+        width: 100%;
+        margin-top: 12px;
+    }
+    .discountForm input::placeholder{
+        font-size: 12px;
+    }
+    .w-25{ padding-right: 12px; padding-left: 12px; }
+    .single_occasion .remove_occasion{ left: 4px; }
+    .remove_occasion button{
+        width: 25px;
+        height: 25px;
+        font-size: 12px;
+    }
+    .phoneNumDeta{ font-size: 14px !important; }
+    .addOccasionForm .form-select, .addOccasionForm .form-control{
+        width: 100%;
+    }
+    .addOccasionForm  .form{
+        width: 18rem;
+    }
+    #addOccasion .rounded-circle{
+        width: 25px;
+        height: 25px;
+        font-size: 14px;
+    }
+    .main_container{
+        width: 90%;
+    }
+    .prodcutDetail::before, .prodcutDetail::after{
+        width: 65px;
+    }
+    .prodcutDetail::before {
+        left: 60px;
+    }
+    .prodcutDetail::after {
+        right: 60px;
+    }
+    #orderSteps{
+        width: 100%;
+    }
+    #orderSteps .step_title_colored{font-size: 14px !important;}  
+    .middleStep::before {
+        width: 56%;
+        left: 71%;
+    }
+    .middleStep::after {
+        width: 52%;
+        right: 74%;
+    }
+    .info_item span{
+        font-size: 14px !important;
+    }
+    #orderSteps .single_step .step_circle .step_status{
+        width: 22px;
+        height: 22px;
+    }
+    .step_status svg{
+        font-size: 13px;
+    }
+    .cardComp img{ margin-bottom: 10px; }
+    .complainModal .cardComp .timming{
+         left: -7%; 
+    }
+    .cart_item .cartImage img{
+        width: 85px;
+        height: 85px;
+    }
+    .copyRightContent{flex-direction: column;}
+    span{ font-size: 11px; }
+    p { font-size: 14px; }
+    h1{font-size: 24px;}
+    h2{ font-size: 22px; }
+    h3{ font-size: 20px; }
+    h4{ font-size: 18px; }
+    h5{ font-size: 16px; }
+    header .suadia_flag img {
+        width: 25px;
+        height: 25px;
+    }
+    header .personal_account img{ width: 25px; height: 25px; }
+    header .personal_account{ margin: 0 3px; }
+    .btn{ padding: 3px !important; }
+    #bottom_section #logo img {
+        width: 79px;
+        height: 55px;
+    }
+    .swiper-rtl .swiper-button-next{left: 18%;}
+    .swiper-rtl .swiper-button-prev{right: 18%;}
+    .swiper-button-prev, .swiper-rtl .swiper-button-next{ transform: translateY(150px); }
+    .button1 {
+        width: 110px;
+        height: 38px;
+        font-size: 15px;
+    }
+    .sliderContent{
+        justify-content: center;
+        align-items: center;
+    }
+    .single_special .specialImage img {
+        width: 70px;
+        height: 94px;
+    }
+    #panner .home_panner, #panner .home_panner img{ object-fit: fill; }
+    #panner .pannerMarket {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .appsImgs{
+        justify-content: center;
+        align-items: center;
+    }
+    .occasions_cards .occasion_img img, .occasion_img2{ width: 100px;}
+    
+}
